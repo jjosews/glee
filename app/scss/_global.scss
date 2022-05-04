@@ -1,3 +1,10 @@
 body {
+  @extend %rubik-400;
+  font-size: 16px;
+}
 
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
