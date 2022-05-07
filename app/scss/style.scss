@@ -4,9 +4,6 @@
 @import 'global';
 
 .header{
-  max-width: 1800px;
-  margin: 0 auto;
-  padding: 0 15px;
   &__inner{
     display: flex;
     justify-content: space-between;
@@ -55,18 +52,21 @@
     height: 50px;
     border-radius: 25px;
     padding: 0 40px;
+  }
+  &__box-link{
+    position: relative;
+  }
+  &__box-link--position{
+    position: relative;
     &::after{
       content: "";
       position: absolute;
       width: 1px;
       height: 32px;
       background-color: #fde7d3;
-      top: 57px;
-      right: 250px;
+      top: -7px;
+      right: -31px;
     }
-  }
-  &__box-link{
-    position: relative;
   }
   &__box-num{
     position: absolute;
@@ -81,6 +81,103 @@
     line-height: 16px;
     @extend %dmsans-500;
     color: #243f4d;
+  }
+}
+
+.footer-top{
+  padding: 75px 0 70px;
+  border-bottom: 1px solid #dae4e9;
+  display: flex;
+  &__item{
+    width: 200px;
+  }
+  &__item + .footer-top__item{
+    margin-left: 100px;
+  }
+  &__item-logo{
+    margin-bottom: 20px;
+    display: inline-block;
+  }
+  &__item-list__adress,
+  &__item-list__phone,
+  &__item-list__email {
+    @extend %rubik-400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #7b7b7b;
+    display: block;
+    margin-bottom: 10px;
+  }
+  &__item-title{
+    @extend %dmsans-700;
+    font-size: 16px;
+    color: #1f2044;
+    margin: 16px 0 32px;
+    text-transform: uppercase;
+  }
+  &__list-link{
+    @extend %rubik-400;
+    font-size: 14px;
+    color: #7b7b7b;
+    margin-bottom: 12px;
+    display: inline-block;
+  }
+  &__item-form{
+    width: 270px;
+    @extend %dmsans-400;
+  }
+  &__item-text{
+    @extend %rubik-400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #7b7b7b;
+    margin-bottom: 35px;
+  }
+  &__item-form__input{
+    width: 170px;
+    height: 38px;
+    padding: 0 16px;
+    border: none;
+    background-color: #fef7f0;
+    &::placeholder{
+      font-size: 12px;
+      color: #234969;
+    }
+  }
+  &__item-form__btn{
+    border: none;
+    padding: 0;
+    width: 100px;
+    height: 38px;
+    background-color: #a3bbc8;
+    color: #fff;
+    font-size: 14px;
+    float: right;
+  }
+}
+
+.footer-bottom{
+  height: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  color: #7b7b7b;
+  &__nav{
+    display: flex;
+  }
+  &__nav-item{
+    padding: 0 16px;
+    &:last-child{
+      padding: 0 0 0 16px;
+    }
+  }
+  &__nav-item + .footer-bottom__nav-item{
+    border-left: 1px solid #7b7b7b;
+  }
+  &__nav-link{
+    font-size: 14px;
+    color: #7b7b7b;
   }
 }
 
