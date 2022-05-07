@@ -1,6 +1,7 @@
 @import 'vars';
 @import 'fonts';
 @import 'reset';
+@import 'libs';
 @import 'global';
 
 .header{
@@ -181,6 +182,120 @@
   }
 }
 
+.top-slider{
+  &__inner{
+    background-color: #fcd7b6;
+    background-image: url('../images/top-slider-bg.png');
+    background-repeat: no-repeat;
+    background-position: 80% 50%;
+  }
+  &__item{
+    padding: 210px 0 200px;
+  }
+  &__content{
+    display: inline-block;
+  }
+  &__content-title{
+    @extend %rubik-500;
+    font-size: 72px;
+    line-height: 70px;
+    color: #243f4d;
+    max-width: 470px;
+    margin-bottom: 40px;
+  }
+  &__content-text{
+    color: #436372;
+    font-size: 18px;
+    line-height: 30px;
+    max-width: 370px;
+    margin-bottom: 36px;
+  }
+  &__content-link{
+    background-color: #a3bbc8;
+    padding: 20px 100px 20px 26px;
+    display: inline-block;
+    font-size: 15px;
+    color: #fff;
+    position: relative;
+    &::before{
+      content: '';
+      position: absolute;
+      background-image: url('../images/arrow.svg');
+      width: 22px;
+      height: 9px;
+      top: 50%;
+      right: 20px;
+      transform: translateY(-50%)
+    }
+  }
+  &__img{
+    margin-top: 40px;
+    float: right;
+  }
+  .slick-dots{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 45px;
+    li + li {
+      margin-left: 10px;
+    }
+    li{
+      button{
+        border: none;
+        padding: 0;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: #fde3cc;
+        @extend %rubik-500;
+        font-size: 11px;
+        color: #667983;
+        cursor: pointer;
+      }
+      &.slick-active{
+        button{
+          background-color: #fff;
+          color: #243f4d;
+        }
+      }
+    }
+  }
+  &__info{
+    background-color: #fef7f0;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 150px;
+  }
+  &__info-item{
+    display: flex;
+    min-height: 170px;
+    &:nth-child(2){
+      padding: 0 160px 0 150px;
+      border-left: 1px solid #e8e4df;
+      border-right: 1px solid #e8e4df;
+    }
+  }
+  &__info-item__content{
+    margin-top: 36px;
+  }
+  &__info-item__content-title{
+    @extend %dmsans-700;
+    color: #414141;
+    font-size: 18px;
+    line-height: 40px;
+  }
+  &__info-item__content-text{
+    @extend %dmsans-400;
+    color: #585858;
+    font-size: 16px;
+    line-height: 30px;
+  }
+  &__info-item__img{
+    margin-right: 25px;
+    margin-top: -22px;
+    margin: -22px 25px 0 0;
+  }
+}
 
 
 
