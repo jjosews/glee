@@ -154,6 +154,7 @@
     color: #fff;
     font-size: 14px;
     float: right;
+    cursor: pointer;
   }
 }
 
@@ -294,6 +295,110 @@
     margin-right: 25px;
     margin-top: -22px;
     margin: -22px 25px 0 0;
+  }
+}
+
+.product{
+  padding: 70px 0 90px;
+  &__title{
+    @extend %dmsans-700;
+    color: #191919;
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 32px;
+  }
+  &__filter-btn{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 80px;
+    .mixitup-control-active{
+      color: #191919;
+    }
+  }
+  &__btn{
+    border: none;
+    padding: 0;
+    background-color: transparent;
+    @extend %dmsans-700;
+    color: #8b8b8b;
+    cursor: pointer;
+    & + .product__btn{
+      margin-left: 30px;
+    }
+  }
+  &__items{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 40px 30px;
+  }
+}
+
+.product-item{
+  width: 270px;
+  height: 380px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
+  &__img-box{
+    position: relative;
+    height: 250px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    margin-bottom: 34px;
+  }
+  &__link-box{
+    transition: all .3s;
+    position: absolute;
+    bottom: 50px;
+    right: 0;
+    left: 0;
+    width: 168px;
+    height: 45px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(300%);
+  }
+  &__link{
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
+    width: 45px;
+    height: 45px;
+    display: inline-block;
+    padding-top: 13px;
+    transition: all .3s;
+    path{
+      transition: all .3s;
+    }
+    &:hover{
+      background-color: #a3bbc8;
+      path{
+        fill: #fff;
+      }
+    }
+  }
+  &__images{
+    margin: 0 auto;
+    object-fit: none;
+  }
+  &:hover{
+    .product-item__link-box{
+      transform: translateY(0);
+    }
+  }
+  &__info{
+    @extend %dmsans-500;
+    color: #243f4d;
+  }
+  &__title,
+  &__price{
+    font-size: 16px;
+    line-height: 40px;
+  }
+  &__price{
+    color: #a3bbc8;
   }
 }
 
