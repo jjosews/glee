@@ -86,7 +86,7 @@
 }
 
 .footer-top{
-  padding: 75px 0 70px;
+  padding: 0 0 70px;
   border-bottom: 1px solid #dae4e9;
   display: flex;
   &__item{
@@ -470,6 +470,95 @@
   justify-content: center;
   align-items: center;
 }
+
+.blog{
+  padding: 55px 0 70px;
+  &__info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 45px;
+  }
+  &__title{
+    margin-bottom: 0;
+  }
+  &__link{
+    @extend %dmsans-700;
+    color: #262626;
+    padding-right: 24px;
+    position: relative;
+    &::after{
+      content: '';
+      position: absolute;
+      width: 6px;
+      height: 11px;
+      top: 6px;
+      right: 0;
+      background-image: url('../images/icons/arrow.svg');
+    }
+  }
+  &__items{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__item{
+    max-width: 370px;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
+  }
+  &__item-content{
+    padding: 0 30px 25px;
+  }
+  &__item-news{
+    width: 100px;
+    height: 30px;
+    background-color: #a3bbc8;
+    color: #fff;
+    @extend %poppins-700;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    transform: translateY(-15px);
+  }
+  &__item-descr{
+    @extend %dmsans-500;
+    font-size: 18px;
+    color: #262626;
+    padding: 0 2px 15px;
+    border-bottom: 1px solid #e0e0e0;
+    margin-bottom: 20px;
+  }
+  &__item-info{
+    display: flex;
+  }
+  &__item-date{
+    margin-right: 30px;
+  }
+  &__item-date,
+  &__item-author{
+    font-size: 12px;
+    color: #222933;
+  }
+}
+
+.partners{
+  background-color: #fef7f0;
+  padding-top: 170px;
+  margin-top: -178px;
+  &__list{
+    padding: 90px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+
+
+
+
 
 
 
