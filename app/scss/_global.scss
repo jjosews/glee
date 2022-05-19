@@ -94,3 +94,24 @@ body{
     color: #979ba0;
   }
 }
+
+.pagination{
+  display: flex;
+  justify-content: center;
+  margin-top: 70px;
+  &__list{
+    display: flex;
+  }
+  &__item{
+    padding: 0 8px;
+  }
+  &__link{
+    border: 1px solid #a3bbc8;
+    padding: 14.5px 21px;
+    color: #243f4d;
+  }
+  &__link--active{
+    background-color: #a3bbc8;
+    color: #fff;
+  }
+}

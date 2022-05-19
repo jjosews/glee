@@ -1,4 +1,26 @@
 $(function(){
+
+  $('.filter-products__star').rateYo({
+    starWidth: "12px",
+    normalFill: "#d6d6d6",
+    ratedFill: "#ffcc00",
+    spacing: "5px",
+    readOnly: true
+  });
+
+  $('.filter-price__input').ionRangeSlider({
+    type: "double",
+    prefix: "$",
+    onStart: function (data){
+      $('.filter-price__from').text(data.from);
+      $('.filter-price__to').text(data.to);
+    },
+    onChange: function (data){
+      $('.filter-price__from').text(data.from);
+      $('.filter-price__to').text(data.to);
+    },
+  });
+
   $('.top-slider__items').slick({
     dots: true,
     arrows: false,
