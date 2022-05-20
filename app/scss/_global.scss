@@ -115,3 +115,24 @@ body{
     color: #fff;
   }
 }
+
+.pagination-left{
+  display: flex;
+  justify-content: start;
+  margin-top: 95px;
+  &__list{
+    display: flex;
+  }
+  &__item + .pagination-left__item{
+    margin-left: 16px;
+  }
+  &__link{
+    border: 1px solid #a3bbc8;
+    padding: 14.5px 21px;
+    color: #243f4d;
+  }
+  &__link--active{
+    background-color: #a3bbc8;
+    color: #fff;
+  }
+}

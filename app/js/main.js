@@ -8,6 +8,14 @@ $(function(){
     readOnly: true
   });
 
+  $('.shop-content__item-star').rateYo({
+    starWidth: "16px",
+    normalFill: "#d6d6d6",
+    ratedFill: "#ffcc00",
+    spacing: "12px",
+    readOnly: true
+  });
+
   $('.filter-price__input').ionRangeSlider({
     type: "double",
     prefix: "$",
