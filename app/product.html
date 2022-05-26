@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Detalis</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="container-big">
+      <div class="header__inner">
+        <a class="logo" href="#">
+          <img class="logo__img" src="images/logo.png" alt="logo icon">
+        </a>
+        <nav class="menu">
+          <ul class="menu__list">
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="#">Home +</a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="#">About</a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="#">Services</a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="#">Pages +</a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="#">News</a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="user-nav">
+          <a class="user-nav__link" href="#">
+            <img class="user-nav__link-img" src="images/icons/search.svg" alt="search icon">
+          </a>
+          <div class="user-nav__box">
+            <a class="user-nav__box-link user-nav__box-link--position" href="#">
+              <img class="user-nav__box-link-img" src="images/icons/heart.svg" alt="heart icon">
+              <span class="user-nav__box-num">0</span>
+            </a>
+            <a class="user-nav__box-link" href="#">
+              <img class="user-nav__box-link-img" src="images/icons/cart.svg" alt="cart icon">
+              <span class="user-nav__box-num">0</span>
+            </a>
+          </div>
+          <a class="user-nav__link" href="#">
+            <img class="user-nav__link-img" src="images/icons/user.svg" alt="user icon">
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="top">
+      <h2 class="top__title">Product Detalis</h2>
+      <div class="breadcrumbs">
+        <ul class="breadcrumbs__list">
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link" href="#">Home</a>
+          </li>
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link" href="#">Product detalis</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="product-page">
+      <div class="container">
+        <div class="product-one">
+          <div class="product-one__inner">
+            <div class="product-one__slide slide-product">
+              <div class="slide-product__thumb">
+                <div class="slide-product__thumb-item">
+                  <img src="images/product/item/1.jpg" alt="slide images">
+                </div>
+                <div class="slide-product__thumb-item">
+                  <img src="images/product/item/1.jpg" alt="slide images">
+                </div>
+                <div class="slide-product__thumb-item">
+                  <img src="images/product/item/1.jpg" alt="slide images">
+                </div>
+              </div>
+              <div class="slide-product__big">
+                <div class="slide-product__big-item">
+                  <img src="images/product/item/1.jpg" alt="slide images">
+                </div>
+                <div class="slide-product__big-item">
+                  <img src="images/product/item/1.jpg" alt="slide images">
+                </div>
+                <div class="slide-product__big-item">
+                  <img src="images/product/item/1.jpg" alt="slide images">
+                </div>
+              </div>
+            </div>
+            <div class="product-one__content">
+              <h3 class="product-one__title">Pendant lamp</h3>
+              <div class="product-one__star" data-rateyo-rating="4"></div>
+              <span class="product-one__price">23$</span>
+              <p class="product-one__text">
+                consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              </p>
+              <form class="product-one__form" action="#">
+                <input class="product-one__num" type="number" value="1" min="1">
+                <button class="product-one__btn" type="submit">Add to cart</button>
+              </form>
+              <ul class="product-one__list">
+                <li class="product-one__item">SKU: 014</li>
+                <li class="product-one__item">Category: Lights</li>
+                <li class="product-one__item">Tag: Decorative</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="product-tabs">
+      <div class="container">
+        <div class="product-tabs__top">
+          <a class="product-tabs__top-item product-tabs__top-item--active" href="#tab-1">Description</a>
+          <a class="product-tabs__top-item" href="#tab-2">Additional information</a>
+          <a class="product-tabs__top-item" href="#tab-3">Reviews (2)</a>
+        </div>
+        <div class="product-tabs__content">
+          <div class="product-tabs__content-item product-tabs__content-item--active" id="tab-1">
+            consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+            minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo Lorem ipsum dolor sit
+            amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+            enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </div>
+          <div class="product-tabs__content-item" id="tab-2">
+            content 2
+          </div>
+          <div class="product-tabs__content-item" id="tab-3">
+            content 3
+          </div>
+        </div>
+      </div>
+    </div>
+    <section class="blog">
+      <div class="container">
+        <div class="blog__info">
+          <h3 class="title blog__title">Our Insights & Articles</h3>
+          <a class="blog__link" href="#">View All</a>
+        </div>
+        <div class="blog__items">
+          <div class="blog__item">
+            <a class="blog__item-imglink" href="#">
+              <img class="blog__item-img" src="images/blog/1.jpg" alt="blog images">
+            </a>
+            <div class="blog__item-content">
+              <div class="blog__item-news">NEWS</div>
+              <a class="blog__item-descrlink" href="#">
+                <p class="blog__item-descr">
+                  Diusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+                </p>
+              </a>
+              <div class="blog__item-info">
+                <div class="blog__item-date">28 JANUARY, 2020</div>
+                <a class="blog__item-author" href="#">BY ADMIN</a>
+              </div>
+            </div>
+          </div>
+          <div class="blog__item">
+            <a class="blog__item-imglink" href="#">
+              <img class="blog__item-img" src="images/blog/2.jpg" alt="blog images">
+            </a>
+            <div class="blog__item-content">
+              <div class="blog__item-news">NEWS</div>
+              <a class="blog__item-descrlink" href="#">
+                <p class="blog__item-descr">
+                  Aonsectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                </p>
+              </a>
+              <div class="blog__item-info">
+                <div class="blog__item-date">28 JANUARY, 2020</div>
+                <a class="blog__item-author" href="#">BY ADMIN</a>
+              </div>
+            </div>
+          </div>
+          <div class="blog__item">
+            <a class="blog__item-imglink" href="#">
+              <img class="blog__item-img" src="images/blog/3.jpg" alt="blog images">
+            </a>
+            <div class="blog__item-content">
+              <div class="blog__item-news">NEWS</div>
+              <a class="blog__item-descrlink" href="#">
+                <p class="blog__item-descr">
+                  Rncididunt ut labore et dolore magna aliqua. Ut enim
+                  <br>
+                  <br>
+                </p>
+              </a>
+              <div class="blog__item-info">
+                <div class="blog__item-date">28 JANUARY, 2020</div>
+                <a class="blog__item-author" href="#">BY ADMIN</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="blog-partners">
+        <div class="container">
+          <ul class="blog-partners__list">
+            <li class="blog-partners__item">
+              <img class="blog-partners__item-img" src="images/partners/1.png" alt="partner images">
+            </li>
+            <li class="blog-partners__item">
+              <img class="blog-partners__item-img" src="images/partners/2.png" alt="partner images">
+            </li>
+            <li class="blog-partners__item">
+              <img class="blog-partners__item-img" src="images/partners/3.png" alt="partner images">
+            </li>
+            <li class="blog-partners__item">
+              <img class="blog-partners__item-img" src="images/partners/4.png" alt="partner images">
+            </li>
+            <li class="blog-partners__item">
+              <img class="blog-partners__item-img" src="images/partners/5.png" alt="partner images">
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-top__item">
+          <a class="logo footer-top__item-logo" href="#">
+            <img class="logo__img" src="images/logo.png" alt="logo icon">
+          </a>
+          <a class="footer-top__item-list__adress" href="#">
+            ADDRESS: 4772 Wines Lane
+            Houston, TX 77032
+          </a>
+          <a class="footer-top__item-list__phone" href="tel:8323475843">TELEPHOME: +832-347-5843</a>
+          <a class="footer-top__item-list__email" href="mailto:contact@glee.com">EMAIL: contact@Glee.com</a>
+        </div>
+        <div class="footer-top__item">
+          <h6 class="footer-top__item-title">Services</h6>
+          <ul class="footer-top__list">
+            <li class="footer-top__list-item">
+              <a class="footer-top__list-link" href="#">About us</a>
+            </li>
+            <li class="footer-top__list-item">
+              <a class="footer-top__list-link" href="#">Return Policy</a>
+            </li>
+            <li class="footer-top__list-item">
+              <a class="footer-top__list-link" href="#">Our Blog</a>
+            </li>
+            <li class="footer-top__list-item">
+              <a class="footer-top__list-link" href="#">Contact Us</a>
+            </li>
+            <li class="footer-top__list-item">
+              <a class="footer-top__list-link" href="#">Terms & Condition</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-top__item">
+          <h6 class="footer-top__item-title">Account</h6>
+          <ul class="footer-top__list">
+            <li class="footer-top__list-item">
+              <a class="footer-top__list-link" href="#">Your Account</a>
+            </li>
+            <li class="footer-top__list-item">
+              <a class="footer-top__list-link" href="#">Checkout</a>
+            </li>
+            <li class="footer-top__list-item">
+              <a class="footer-top__list-link" href="#">Login</a>
+            </li>
+            <li class="footer-top__list-item">
+              <a class="footer-top__list-link" href="#">Register</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-top__item footer-top__item-form">
+          <h6 class="footer-top__item-title">newsletter</h6>
+          <p class="footer-top__item-text">
+            Subscribe by our newsletter and get update protidin.
+          </p>
+          <form class="footer-top__item-form" action="#">
+            <input class="footer-top__item-form__input" type="text" placeholder="Email address" required>
+            <button class="footer-top__item-form__btn" type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-bottom__copy">©2020 CopyRight Example. All rights reserved.</p>
+        <ul class="footer-bottom__nav">
+          <li class="footer-bottom__nav-item">
+            <a class="footer-bottom__nav-link" href="#">Home</a>
+          </li>
+          <li class="footer-bottom__nav-item">
+            <a class="footer-bottom__nav-link" href="#">About</a>
+          </li>
+          <li class="footer-bottom__nav-item">
+            <a class="footer-bottom__nav-link" href="#">Blog</a>
+          </li>
+          <li class="footer-bottom__nav-item">
+            <a class="footer-bottom__nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>
