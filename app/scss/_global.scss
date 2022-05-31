@@ -105,10 +105,14 @@ body{
   &__item{
     padding: 0 8px;
   }
+  &__arrow{
+    padding: 0 8px;
+  }
   &__link{
     border: 1px solid #a3bbc8;
     padding: 14.5px 21px;
     color: #243f4d;
+    display: inline-block;
   }
   &__link--active{
     background-color: #a3bbc8;
@@ -126,10 +130,14 @@ body{
   &__item + .pagination-left__item{
     margin-left: 16px;
   }
+  &__arrow{
+    margin-left: 16px;
+  }
   &__link{
     border: 1px solid #a3bbc8;
     padding: 14.5px 21px;
     color: #243f4d;
+    display: inline-block;
   }
   &__link--active{
     background-color: #a3bbc8;
